@@ -9,7 +9,7 @@ class Piano {
       const splitText = text
         ?.split('')
         .join('</span><span aria-hidden="true" data-letter>');
-      textEl.innerHTML = `<span aria-hidden="true">${splitText}</span>`;
+      textEl.innerHTML = `<span aria-hidden="true" data-letter>${splitText}</span>`;
 
       const letters = textEl.querySelectorAll('[data-letter]');
 
